@@ -1,28 +1,100 @@
-Demonic Store Robbery turns every 24/7, liquor store, and corner shop in your city into a proper high-risk heist, not just a “press E for cash” script.
+Demonic Store Robbery – Turn Every Corner Store Into a High-Risk Heist
 
-Built for QBX/QBCore, it plugs straight into your existing setup, using ox_inventory for rewards and ps-dispatch for clean police alerts.
+Demonic Store Robbery is a fully configurable, performance-friendly store robbery script designed for serious RP servers. Turn every 24/7, liquor store, and corner shop into an immersive robbery experience with escalating tension, custom rewards, and clean integrations into your framework and economy.
 
-What it does
+Whether you’re running high-stakes criminal RP or just want your civilians to think twice before walking into a gas station at 3AM, this script drops perfectly into your server’s ecosystem.
 
-Every configured store becomes robbable with its own settings
-– custom rewards, cooldowns, and police requirements.
+🔥 Key Features
 
-Robberies are multi-stage
-– hit the registers, crack the safe/backroom, then get out before cops show up.
+Multi-Store Support
+Add as many stores as you want through a simple config. Each location can have:
 
-Skill-based gameplay
-– hooks are ready so you can plug in your own minigames (lockpicking, hacking, codes, etc.).
+Different rewards
 
-Police integration via ps-dispatch
-– proper alerts, blips and labels, plus configurable minimum on-duty officers before a robbery can start.
+Different cooldowns
 
-Balanced economy with ox_inventory
-– payouts are fully configurable: cash, marked bills, items, or custom loot tables, per store.
+Different police requirements
 
-Anti-abuse friendly
-– server-side checks, cooldowns, distance/radius validation and one active robbery per store at a time.
+Multi-Stage Robbery Flow
+Make robberies feel like real events, not just one-button money spawns:
 
-Optimized for live servers
-– idle 0.00ms usage and only runs logic when players are actually doing something.
+Rob cash registers
 
-If you’re running a serious RP server on Qbox/QBCore with ox_inventory and ps-dispatch, Demonic Store Robbery gives your criminals something real to plan around and your cops something real to respond to.
+Crack store safes / backroom stashes
+
+Optional escape / radius checks
+
+Skill-Based Gameplay
+Plug in your favorite minigames (lockpicking, hacking, code matching, etc.) with clear hooks in the config so you can use whatever system your server already runs.
+
+Smart Police Integration
+
+Configurable chance & delay for alerts
+
+GPS blips & store location names in notifications
+
+Only allow robberies when a set number of officers are on duty
+
+Optional “panic cooldown” for the whole city after a big spree
+
+Balanced Economy Controls
+
+Individual loot tables per store
+
+Cash, marked bills, items, or custom rewards
+
+Cooldowns per store and global cooldown options
+
+Configurable fail penalties (nothing, fewer rewards, or police boost)
+
+Clean UX for Players
+
+On-screen prompts and progress feedback
+
+3D text / target support (depending on what you add in)
+
+Clear messages for requirements (not enough cops, store on cooldown, etc.)
+
+Anti-Abuse & Security
+
+Fully server-side reward checks
+
+Cooldown & distance validation
+
+One active robbery per store at a time
+
+Logs/hooks you can tie into your own logging system
+
+Optimized for Live Servers
+
+0.00ms idle usage
+
+Only runs logic when players are actually interacting
+
+Clean and organized code for easy editing
+
+⚙️ Configuration
+
+Everything is tuned through a friendly config.lua, including:
+
+Store locations, names, and types
+
+Required police count
+
+Cooldowns (per store & global)
+
+Rewards and loot tables
+
+Minigame / interaction hooks
+
+Notifications & messages
+
+Drop it in, adjust the config to your framework and economy, and your city instantly gains a new high-risk, high-reward activity.
+
+🎯 Perfect For
+
+Serious RP servers wanting structured, realistic store robberies
+
+Economy-driven servers that need fine-tuned, configurable payouts
+
+Servers that want criminal content that actually involves planning, risk, and tension
